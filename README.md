@@ -2,13 +2,13 @@
 
 Voting Mobile application with implementation of Optical Character Recognition and Face Detection Using MTCNN (Multi Task Convolutional Neural Network) and face recognition with FaceNet Model
 
-#ERD 
+# ERD 
 ![erdiagram](https://user-images.githubusercontent.com/64388690/162124185-136746fd-0b64-4270-bf1c-ac0cb823d995.png)
 
 
 User could choose one candidate only as seen above. The user Identitiy number will be then stored in Firebase.
 
-#Flowchart
+# Flowchart
 ![Register Flowchart](https://user-images.githubusercontent.com/64388690/162125006-f314810f-146c-4467-9f3c-463f612b22dd.png)
 User has to register their face and identitiy card before login in.
 The ML- Kit Firebase will detect the personal ID and passed it to the next page of registration. User need to take a selfie picture in the next process.
