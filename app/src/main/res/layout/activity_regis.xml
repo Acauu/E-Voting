@@ -1,0 +1,118 @@
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/greydark"
+    tools:context=".Regis">
+
+
+    <ImageView
+        android:id="@+id/foto1"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/v3"
+        android:layout_marginBottom="8dp"/>
+    <TextView
+        android:id="@+id/textview31"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foto1"
+        android:text="Upload Foto"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/textview31"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/nameoutput"
+        android:padding="15dp"
+        android:textColorHint="#000"
+        android:textStyle="bold|italic"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:id="@+id/textoutputt"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:hint="Nomor Induk Kependudukan"
+        android:maxLength="16"
+        android:layout_below="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="@+id/nameoutputt"
+        android:layout_centerHorizontal="true"
+        android:background="#F2F2F2"
+        app:helperText="Required"
+        android:padding="15dp"
+        android:textColorHint="#000"
+        android:textStyle="bold|italic"
+        />
+
+
+
+    <EditText
+        android:id="@+id/passreg"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:inputType="textPassword"
+
+        android:hint="Password"
+        android:maxLength="16"
+        android:layout_below="@+id/textoutputt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="@+id/nameoutputt"
+        android:layout_centerHorizontal="true"
+        android:background="#F2F2F2"
+        app:helperText="Required"
+        android:padding="15dp"
+        android:textColorHint="#000"
+        android:textStyle="bold|italic"
+        />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/passconfirm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passreg"
+        android:layout_centerHorizontal="true"
+        android:background="#F2F2F2"
+        app:helperText="Required"
+        android:padding="15dp"
+        android:textColorHint="#000"
+        android:textStyle="bold|italic"
+        android:inputType="textPassword"
+        android:hint="Konfirmasi Password"/>
+
+    <Button
+        android:id="@+id/btnreg"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passconfirm"
+        android:layout_alignParentTop="@+id/textoutputt"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/Yellow"
+        android:padding="10dp"
+        android:onClick="registrasi"
+        android:text="Daftar"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greydark">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_marginTop="100dp"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/vote" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:text="Selamat Datang di E-Voting"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/imageView4"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textview28"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Tempat dimana kalian bisa melihat berita pemilu ter-update dan dapat melakukan vote kapanpun dan dimanapun!"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:onClick="regis"
+            android:text="Daftar"
+            android:backgroundTint="@color/Yellow"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:onClick="login"
+            android:text="Masuk"
+            android:backgroundTint="@color/Yellow"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</RelativeLayout>

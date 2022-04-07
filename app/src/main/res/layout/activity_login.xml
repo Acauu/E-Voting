@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greydark"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/imageview20"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/vote"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nik"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/email"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="8dp"
+                    android:hint="Nomor Induk Kependudukan" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/pass"
+                    android:drawableLeft="@drawable/pass"
+                    android:drawablePadding="3dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/buttonlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/Yellow"
+                app:cardCornerRadius="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="12dp"
+                    android:text="Masuk Akun"
+                    android:onClick="login"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+    <!--<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:paddingBottom="@dimen/activity_vertical_margin"-->
+<!--    android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--    android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--    android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--    android:background="#828282"-->
+<!--    tools:context=".Login">-->
+
+
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/nik"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:hint="Nomor Induk Kependudukan"-->
+<!--        android:maxLength="16"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="#F2F2F2"-->
+<!--        app:helperText="Required"-->
+<!--        android:padding="15dp"-->
+<!--        android:textColorHint="#000"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        />-->
+
+<!--    &lt;!&ndash;    <EditText&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:id="@+id/emailreg"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:hint="Email"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:inputType="textEmailAddress"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_width="fill_parent"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:layout_below="@+id/textoutputt"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:background="#F2F2F2"&ndash;&gt;-->
+<!--    &lt;!&ndash;        app:helperText="Required"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:padding="15dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textColorHint="#000"&ndash;&gt;-->
+<!--    &lt;!&ndash;        android:textStyle="bold|italic"/>&ndash;&gt;-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/passlogin"-->
+<!--        android:inputType="textPassword"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:hint="Password"-->
+<!--        android:maxLength="16"-->
+<!--        android:layout_below="@+id/nik"-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="#F2F2F2"-->
+<!--        app:helperText="Required"-->
+<!--        android:padding="15dp"-->
+<!--        android:textColorHint="#000"-->
+<!--        android:textStyle="bold|italic"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/buttonlogin"-->
+<!--        android:focusableInTouchMode="false"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/passlogin"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="#FFFFC2"-->
+<!--        android:padding="10dp"-->
+<!--        android:onClick="login"-->
+<!--        android:text="login"-->
+<!--        android:textColor="#000"-->
+<!--        android:textStyle="bold" />-->
+
+
+<!--</android.widget.RelativeLayout>-->

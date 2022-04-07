@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Voting</string>
+
+        <string name="title_activity_mainlogin">Login</string>
+        <string name="title_activity_navhome">Suaramu Berharga!</string>
+
+
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+
+        <string name="action_settings">Settings</string>
+        <string name="title_activity_mainactivity">Home</string>
+        <string name="label" />
+
+</resources>
